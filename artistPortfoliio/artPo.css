@@ -2,3 +2,46 @@ body {
     font-family: 'Cormorant Garamond', serif;
 font-family: 'Gabarito', sans-serif;
 }
+
+.navbar ul{
+padding: 0px;
+margin-top:34px;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 200;
+    margin: 0px 32px;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links li {
+    display: inline-block;
+   
+
+}
+/* narrow down styles at first, write rough css & try to format it later */
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    /* margin-left:8px ;
+    margin-right:8px ; */
+    margin: 0px 8px;
+}
+
+
+a.active {
+    border-bottom: 2px solid;
+    /* since i only want the bottom border , and i can push this border away which is of thickenss 1px with adding of padding*/
+}
+
+
+img {
+    width : 40%;
+    height: 500px;
+}
