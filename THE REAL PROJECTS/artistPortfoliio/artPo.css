@@ -1,0 +1,88 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Gabarito", sans-serif;
+}
+
+.navbar ul {
+  padding: 0px;
+  margin-top: 34px;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 200;
+  margin: 0px 32px;
+}
+
+.links {
+  display: inline-block;
+}
+
+.links li {
+  display: inline-block;
+}
+/* narrow down styles at first, write rough css & try to format it later */
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  /* margin-left:8px ;
+    margin-right:8px ; */
+  margin: 0px 8px;
+}
+
+a.active {
+  border-bottom: 2px solid;
+  /* since i only want the bottom border , and i can push this border away which is of thickenss 1px with adding of padding*/
+}
+
+.card {
+  width: 49.75%;
+  display: inline-block;
+  box-sizing: border-box;
+  /* the above css states that , the width iam setting for the element is actually the width of the entire element & things dont get overflow from the element */
+  /* now you can see the effect of responsiveness because the width of card is decided, so as the width is non adjustable in the screen , the card goes down for the width it has, but we cant call it responsiveness ,as it is not perfect what we call it as reponsiveness */
+  padding: 16px;
+  /* border: 1px solid red; */
+}
+
+.card img {
+  width: 100%;
+  /* card should be of 100% width of the parent, other it will overflow  */
+  height: 500px;
+  object-fit: cover;
+  /* the above css is applied so that imgs dont get streatched or squeezed while we change the screen size, so we want to clip the img insted of streachig & making it look bad  */
+}
+
+.card h2 {
+  display: inline-block;
+  font-weight: 100;
+  margin: 8px 0 0 0;
+}
+
+.footer {
+  width: 40%;
+  margin: 50px 0 30px 200px;
+  min-width: 600px;
+  /* min width is given only when its getting ugly as we shrink the screen more, since the width:40% is responsive to the screen size */
+}
+
+.footer h3 {
+  font-size: 40px;
+  font-weight: 1;
+}
+
+.contact p {
+    /* display: inline-block; */
+    margin: 0;
+}
+
+#work{
+    padding: 5px;
+    display: inline-block;
+    /* difference between inline & inline-block is that the spacing is added in inline block but not in inline, margin on its surrounding */
+    /* text-decoration: underline; */
+    /* but it is not text decoration  */
+    border-bottom: 1px solid black;
+}
