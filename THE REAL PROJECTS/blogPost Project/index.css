@@ -1,0 +1,150 @@
+body {
+  font-family: Mukta, san-serif;
+  font-size: 16px;
+  /* font size is not necessary here , he is just being explicit  */
+
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5px;
+
+  /* Mukta is the san-serif font we have selected & if it is not present then any san-serif text will be okay */
+}
+
+.section0{
+    height: 100vh;
+    background-color: purple;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section0 h1{
+width: 70%;
+margin: 0;
+}
+.section0 p{
+width: 70%;
+border-bottom: 2px solid white;
+padding-bottom: 40px;
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Bitter, serif;
+  font-weight: 500;
+}
+.section0 h1 {
+    font-size: 70px;
+}
+
+.info {
+  /* display: flex;
+    justify-content: center; */
+  /* i used the above to align the text center  */
+  text-align: center;
+  font-family: Bitter, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.info span {
+  color: orange;
+}
+
+.content {
+  max-width: 900px;
+  /* padding:1000px */
+  /* the above is not the correct way to do it  */
+  margin: 0 auto;
+  padding: 32px;
+  /* the above padding is only for adding space in smaller screens also as there was none  */
+}
+
+.headline {
+  text-transform: uppercase;
+
+  letter-spacing: 0px;
+  margin-bottom: 40px;
+}
+
+.headline span {
+  color: orange;
+}
+
+.content h2 {
+  font-size: 50px;
+
+}
+
+.content h3 {
+  font-size: 40px;
+
+}
+.content h4 {
+  font-size: 30px;
+
+}
+.content h5 {
+  font-size: 24px;
+
+}
+.content h6 {
+  font-size: 20px;
+
+}
+
+.content .quote {
+  font-style: italic;
+  font-size: 14px;
+  border-left: 3px solid orange;
+  padding: 0 0 0 15px;
+  margin-left: 30px;
+}
+
+.quote span {
+  display: block;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.content .section1 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+footer{
+    background-color: purple;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer li {
+  margin: 0;
+  padding: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
