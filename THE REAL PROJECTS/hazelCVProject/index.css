@@ -42,36 +42,36 @@ body {
   opacity: 0.8;
 }
 
-.hero .content {
+.content {
   width: 65%;
   margin: auto;
   color: white;
 }
 
-.hero .content h1 {
+.content h1 {
   font-size: 70px;
 }
 
-.hero .content .mission {
+ .content .mission {
   display: flex;
   justify-content: space-between;
 margin-top: 100px;
 }
 
-.hero .content .mission .left {
+.content .mission .left {
   width: 45%;
   margin: 0;
   font-size: 30px;
   display: flex;
 }
 
-.hero .content h2 {
+.content h2 {
 font-weight: lighter;
 font-size: 30px;
 margin: 0;
 }
 
-.hero .content .mission p {
+.content .mission p {
   width: 45%;
   margin: 0;
   font-size: 30px;
