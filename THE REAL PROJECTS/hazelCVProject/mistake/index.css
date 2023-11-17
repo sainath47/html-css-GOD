@@ -1,0 +1,86 @@
+body {
+  font-family: "Forum", serif;
+  margin: 0px;
+}
+
+.hero {
+  background-color: coral;
+  height: auto;
+  /* when i applied these styles i was able to see default margin had by body tag */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 30px;
+  color: white;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.navbar p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navbar .button {
+  /* i added class here as button but it was button already, since the button was not giving out the exact ui as expected  */
+  padding: 15px 20px;
+  text-decoration: none;
+  color: coral;
+  background-color: white;
+}
+
+.navbar .button:hover {
+  opacity: 0.8;
+}
+
+.content {
+  width: 65%;
+  margin: auto;
+  color: white;
+}
+
+.content1 {
+  width: 65%;
+  margin: auto;
+  color: black;
+}
+
+.content1 h1, .content h1 {
+  font-size: 70px;
+}
+
+.content1 .mission ,.content .mission {
+  display: flex;
+  justify-content: space-between;
+margin-top: 100px;
+}
+
+.content .mission .left {
+  width: 45%;
+  margin: 0;
+  font-size: 30px;
+  display: flex;
+}
+
+.content1 h2,.content h2 {
+font-weight: lighter;
+font-size: 30px;
+margin: 0;
+}
+
+.content1 .mission p ,.content .mission p {
+  width: 45%;
+  margin: 0;
+  font-size: 30px;
+  display: flex;
+}
+
