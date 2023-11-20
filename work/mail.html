@@ -12,7 +12,7 @@
     />
     <style>
       body {
-        margin:100px;
+        margin:100px 0;
         background-color: #eaf0f3;
         height: screen;
         display: flex;
@@ -20,6 +20,15 @@
         align-items: center;
         flex-direction: column;
         font-family: "Barlow", serif;
+      }
+
+
+      .mail {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
       p {
         margin: 0;
@@ -48,9 +57,11 @@
         text-align: center;
         width: 60%;
       }
-      svg {
+     .header>svg {
         box-sizing: border-box;
         margin-bottom: 20px;
+        max-width: 80%;
+        
       }
 
       .main-content {
@@ -58,7 +69,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1112px;
+        /* max-width: 1112px; */
+        width: 80%;
         height: 500px;
         top: 562px;
         left: 163.5px;
@@ -70,7 +82,7 @@
       }
 
       .main-content p {
-        width: 579px;
+        max-width: 579px;
       }
 
       footer p {
@@ -103,7 +115,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1112px;
+        /* max-width: 1112px; */
+        width: 80%;
         height: 375px;
         top: 562px;
         left: 163.5px;
@@ -114,7 +127,7 @@
         padding: 40px 0;
       }
       .app-advt p{
-        width:669px;
+        max-width:669px;
         font-size: 24px;
         
       }
@@ -127,7 +140,7 @@
     </style>
   </head>
   <body>
-<div>
+<div class="mail">
     <header>
         <div class="header">
           <svg
