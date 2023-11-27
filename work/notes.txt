@@ -1,0 +1,1 @@
+notes on problems faced in sending the valid html-css , which are responsive in browser but didnt reflect in the mails
