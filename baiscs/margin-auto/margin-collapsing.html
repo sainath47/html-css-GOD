@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin-collapsing</title>
+    <style>
+        p {
+        border : 1px solid black;
+        /* margin-bottom: 20px; */
+        margin: 0;
+        /* margin: 20px 0 50px 0; */
+        /* from the above example you can see the distance between the elements is 50px ( not 20+50px ) */
+        /* so the concept of margin collapsing only happens when the elements are in direction of coloumn , it doesnt happen when they are in row-direction  */
+    /* top right left right    */
+    width: 50%;
+    margin : 0 20px 0 20px
+    
+     }
+    </style>
+  </head>
+  <body>
+<div style="display: flex;">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cum veniam
+        consequuntur dignissimos sit repudiandae rem, eius totam atque
+        necessitatibus. Voluptatum atque repellat voluptate inventore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minus quia
+        velit distinctio vitae quis dignissimos iure facere alias id, vero odio.
+        Consequatur, deserunt harum.
+      </p>
+</div>
+  </body>
+</html>

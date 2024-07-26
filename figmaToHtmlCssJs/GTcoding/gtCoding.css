@@ -1,0 +1,261 @@
+ /* 2 fonts are getting used
+ - raleway (regular + bold)
+- poppins (regular + bold)
+ 
+
+for images i exported
+-png 
+
+but for the icons 
+- svg
+ */
+
+
+
+ :root {
+     --orange-color: #DA722C;
+     --dark-blue-color: #023047;
+     --dark-color: #070917;
+     --light-color: #E8F7FB;
+     --light-blue-color: #6f7dfb;
+ }
+
+
+ *,
+ *::after,
+ *::before {
+     box-sizing: border-box;
+     /* the above is necessary to make the boxes content to be inside the box only */
+ }
+
+ body {
+     margin: 0;
+     font-family: "Poppins", "san-serif";
+ }
+
+ .wrapper {
+     max-width: 1134px;
+     margin: 0 auto;
+     /* margin is set to
+    0 for top & bottom 
+    auto for left & right */
+ }
+
+ /* Buttons */
+ .btn {
+     padding: 16px 32px;
+     border-radius: 24px;
+     color: white;
+     display: inline-block;
+     /* inline block wraps tightly the  */
+     font-weight: bold;
+     font-size: 18px;
+     text-decoration: none;
+     position: relative;
+ }
+
+ .btn.dark {
+     background: var(--dark-blue-color);
+ }
+
+ .btn.light {
+     background: var(--orange-color);
+ }
+
+ .btn.enroll-icon::before {
+     content: url(images/enroll-icon.svg);
+     position: absolute;
+     top: 30%;
+     left: 39px;
+     transform: translate(-50%);
+ }
+
+ .btn.enroll-icon {
+     padding-left: 60px;
+ }
+
+
+ /* Header */
+
+ header {
+     background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+     height: 100vh;
+     width: 100%;
+
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     width: 1134px;
+     top: 36px;
+     z-index: 100;
+ }
+
+ nav .logo {
+     font-family: "Raleway";
+     font-weight: 900;
+     font-size: 40px;
+     color: white;
+ }
+
+ nav ul {
+     display: flex;
+     align-items: center;
+     gap: 60px;
+     list-style: none;
+     margin: 0;
+ }
+
+ nav ul li a {
+     font-family: "Poppins", sans-serif;
+     font-weight: bold;
+     font-size: 16px;
+     color: white;
+     text-decoration: none;
+ }
+
+ /* hero section */
+
+ .hero-section {
+     padding-top: 60px;
+     display: flex;
+     height: 100vh;
+     width: 100%;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .hero-section .left h1 {
+     font-family: "Raleway", sans-serif;
+     font-weight: 900;
+     color: white;
+     font-size: 50px;
+     line-height: 125%;
+     margin-bottom: 0;
+ }
+
+
+ .hero-section .left p {
+     color: white;
+     font-family: "Poppins", sans-serif;
+     font-size: 16px;
+     line-height: 200%;
+     width: 457px;
+     a
+ }
+
+ .hero-section .left {
+     flex: 1;
+ }
+
+
+ /*hero right section  */
+ .hero-section .right {
+     align-self: flex-end;
+     /* for aligning the image to bottom of the screen  */
+ }
+
+ .hero-section .right img {
+     height: 520px;
+     vertical-align: middle;
+     /* the above css was for to rectify the small gap between the bottom of the screen & the image  */
+ }
+
+ /* achievment cards */
+
+ .achievement-card {
+     position: absolute;
+
+ }
+
+ .achievement-card .content {
+     border-radius: 24px;
+     background: white;
+     padding: 8px 32px;
+     position: relative;
+     z-index: 100;
+ }
+
+ .achievement-card.students-enrolled {
+     left: 47%;
+     top: 330px;
+
+     /* 
+     .achievement-card.students-enrolled'
+
+(     <div class="achievement-card students-enrolled">
+  <!-- Content here -->
+</div>)
+
+     
+     vs 
+
+     .achievement-card .students-enrolled
+
+     (<div class="achievement-card">
+  <div class="students-enrolled">
+    <!-- Content here -->
+  </div>
+</div>
+)
+     
+     the only difference is the space between the classes 
+     that is for 
+
+
+
+     */
+
+
+ }
+
+ .achievement-card h3 {
+     font-family: "Poppins", sans-serif;
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 125%;
+     color: var(--dark-blue-color);
+     margin: 0;
+     text-align: center;
+     width: 100%;
+
+ }
+
+
+ .achievement-card p {
+     font-family: "Poppins", sans-serif;
+     font-size: 16px;
+     color: var(--dark-blue-color);
+     margin-top: -8px;
+     margin-bottom: 8px;
+ }
+
+ .achievement-card .bg {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+     border-radius: 24px;
+     top: 8px;
+     left: 8px;
+     z-index: 1;
+ }
+
+ .achievement-card.overall-rating {
+     left: 45%;
+     top: 450px;
+ }
+
+ .achievement-card .content div {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+ }
+
+ .achievement-cards {
+     /* display: none; */
+
+ }
