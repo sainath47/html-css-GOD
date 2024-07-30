@@ -1,6 +1,166 @@
 /* 
 starting with nav
 -import font
-- & all the 
+- & all the usual things 
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* the above is necessary to make the boxes content to be inside the box only */
+}
+
+:root {
+    --light-orange-color: #F9BC6E;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    /* overflow: hidden; */
+    height: 100%;
+
+}
+
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /* height: 100vh; */
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 1px 5px 5px grey;
+}
+
+nav img {
+    height: 20px;
+}
+
+/* hero-section */
+.hero-section {
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1134px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+/* left */
+.hero-section .left {
+    width: 30%;
+    position: relative;
+    z-index: 1;
+}
+
+.left h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.left h1 span {
+    color: orange;
+}
+
+
+
+.clients {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.clients img {
+    height: 20px;
+    filter: grayscale(100%);
+}
+
+.left .btn.grey {
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/* right */
+
+.hero-section .right {
+    display: flex;
+    align-self: flex-end;
+
+
+}
+
+.hero-section .right img {
+    height: 570px;
+    z-index: 1;
+    /* vertical-align: middle; */
+}
+
+.bottom-background{
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.bottom-background .backWave {
+
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+
+}
+
+/* navigation */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav .btn.contact-us {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #F9BC6E;
+    color: #F9BC6E;
+}
+
+nav li .blog-link {}
+
+nav li .blog-link::after {
+    content: url(images/blog-Vector-icon\ 1.svg);
+    position: absolute;
+    right: 12%;
+}
