@@ -94,12 +94,22 @@ but for the icons
      z-index: 100;
  }
 
+ nav.scrolled{
+    background: var(--dark-color);
+    box-shadow:0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+ }
+
+
+
  nav .logo {
      font-family: "Raleway";
      font-weight: 900;
      font-size: 40px;
      color: white;
  }
+
 
  nav ul {
      display: flex;
@@ -512,7 +522,7 @@ but for the icons
 footer{
     background: black;
     color: white;
-    padding: 70px 0px;'
+    padding: 70px 0px;
     
 
 }
@@ -539,4 +549,50 @@ footer ul{
 footer .links-container{
 display: grid;
 grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+    margin-left: 20px;
+}
+
+footer .social a{
+    margin-right: 28px;
+}
+
+footer form{
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+
+footer form input{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 32px;
+    color: #000000;
+    width :100%;
+
+
+
+}
+
+footer form .submit-btn{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: var(--dark-color);
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+    color: white;
+    cursor: pointer;
 }
