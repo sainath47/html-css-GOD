@@ -86,21 +86,157 @@ nav ul {
 
 }
 
-.hero-section .left{
+.hero-section .left {
     width: 30%;
 }
 
-.hero-section .left .btn{
+.hero-section .left .btn {
     padding: 8px 40px;
     background: white;
-    color:  black;
+    color: black;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 8px;
 }
 
 .hero-section .right {
-display: flex;
-justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-section .right img {
+    height: 400px;
+}
+
+/* Partners */
+
+.partners .wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+
+
+.partners h3 {
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.btn.dark {
+    padding: 8px 40px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* Section 1 */
+
+section .wrapper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section1 {}
+
+/* Section 2 */
+
+.section2 .wrapper {}
+
+/* Team */
+
+.wrapper.team{
+    flex-direction: column;
+}
+
+.wrapper h3 {
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 10px;
+
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+}
+
+.cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+}
+
+.card .photo{
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+
+}
+
+.card .name{
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 25px;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+.card .designation{
+left: 10px;
+    bottom: 5px;
+    font-size:20px;
+    position: absolute;
+}
+
+
+
+/* Footer */
+
+footer .wrapper{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 30px;
+   
+}
+
+footer{
+
+    background: var(--green);
+    height: 100px;
+    width: 100%;
 }
 

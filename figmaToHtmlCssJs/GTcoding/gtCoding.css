@@ -81,7 +81,6 @@ but for the icons
      background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
      height: 100vh;
      width: 100%;
-
  }
 
  nav {
@@ -94,11 +93,11 @@ but for the icons
      z-index: 100;
  }
 
- nav.scrolled{
-    background: var(--dark-color);
-    box-shadow:0 16px 14px -8px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 8px 8px;
-    top: 0;
+ nav.scrolled {
+     background: var(--dark-color);
+     box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+     border-radius: 0 0 8px 8px;
+     top: 0;
  }
 
 
@@ -477,122 +476,121 @@ but for the icons
 
  }
 
- .courses-section .wrapper{
-    position: relative;
-    padding-bottom: 150px;
+ .courses-section .wrapper {
+     position: relative;
+     padding-bottom: 150px;
 
  }
 
- .courses-section .wrapper .btn{
-    position: absolute;
-    right: 0;
+ .courses-section .wrapper .btn {
+     position: absolute;
+     right: 0;
  }
 
 
  /* App section */
 
- .app-section{
-    text-align: center;
-    margin-bottom: 150px;
+ .app-section {
+     text-align: center;
+     margin-bottom: 150px;
  }
 
- .app-section .app-buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
- }
-
-
- .app-btn{
-    padding: 20px 30px;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    min-width: 310px;
+ .app-section .app-buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     margin-top: 20px;
  }
 
 
+ .app-btn {
+     padding: 20px 30px;
+     background-color: black;
+     color: white;
+     display: flex;
+     align-items: center;
+     gap: 14px;
+     min-width: 310px;
+ }
 
 
-/* footer */
-footer{
-    background: black;
-    color: white;
-    padding: 70px 0px;
-    
 
-}
 
-footer a{
-    text-decoration:  none;
-    color: white;
-}
+ /* footer */
+ footer {
+     background: black;
+     color: white;
+     padding: 70px 0px;
 
-/* footer .links-container{
+
+ }
+
+ footer a {
+     text-decoration: none;
+     color: white;
+ }
+
+ /* footer .links-container{
     display: flex;
 } */
 
-footer h3{
-    color: orange;
-}
+ footer h3 {
+     color: orange;
+ }
 
-footer ul{
-    list-style: none;
-    padding-left: 20px;
-}
+ footer ul {
+     list-style: none;
+     padding-left: 20px;
+ }
+ 
+ footer .links-container {
+     display: grid;
+     grid-template-columns: 2fr 2fr 3fr;
+ }
 
+ footer .social {
+     margin-left: 20px;
+ }
 
-footer .links-container{
-display: grid;
-grid-template-columns: 2fr 2fr 3fr;
-}
+ footer .social a {
+     margin-right: 28px;
+ }
 
-footer .social {
-    margin-left: 20px;
-}
-
-footer .social a{
-    margin-right: 28px;
-}
-
-footer form{
-    margin-left: 20px;
-    margin-top: 16px;
-    position: relative;
-}
-
-
-footer form input{
-    font-family: "Poppins",sans-serif;
-    font-size: 16px;
-    line-height: 200%;
-    border-radius: 8px;
-    padding: 8px 32px;
-    color: #000000;
-    width :100%;
+ footer form {
+     margin-left: 20px;
+     margin-top: 16px;
+     position: relative;
+ }
 
 
+ footer form input {
+     font-family: "Poppins", sans-serif;
+     font-size: 16px;
+     line-height: 200%;
+     border-radius: 8px;
+     padding: 8px 32px;
+     color: #000000;
+     width: 100%;
 
-}
 
-footer form .submit-btn{
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
 
-    background: var(--dark-color);
-    border-radius: 8px;
-    padding: 8px 32px;
-    border: 0;
+ }
 
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 200%;
-    color: white;
-    cursor: pointer;
-}
+ footer form .submit-btn {
+     position: absolute;
+     right: 5px;
+     top: 50%;
+     transform: translateY(-50%);
+
+     background: var(--dark-color);
+     border-radius: 8px;
+     padding: 8px 32px;
+     border: 0;
+
+     font-family: "Poppins", sans-serif;
+     font-size: 16px;
+     line-height: 200%;
+     color: white;
+     cursor: pointer;
+ }
